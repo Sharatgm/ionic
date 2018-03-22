@@ -1,0 +1,39 @@
+<ion-view title="Page" id="page5">
+  <ion-content padding="true" class="has-header">
+    <h2 id="page5-heading5" style="color:#000000;text-align:center;">Answers</h2>
+    <h4 id="page5-heading6" style="color:#000000;">The meal I ordered was:</h4>
+    <div id="page5-markdown2" class="show-list-numbers-and-dots">
+      <p style="color:#000000;">{{radio}}
+      </p>
+    </div>
+    <h4 id="page5-heading7" style="color:#000000;">The meal I ordered included:</h4>
+    <div id="page5-markdown3" class="show-list-numbers-and-dots">
+      <p style="color:#000000;">
+        <ul>
+          <li ng-if="check1 == true">
+            Starter
+          </li>
+          <li ng-if="check2 == true">
+            First course
+          </li>
+          <li ng-if="check3 == true">
+            Main dish
+          </li>
+          <li ng-if="check4 == true">
+            Dessert
+          </li>
+        </ul>
+      </p>
+    </div>
+    <h4 id="page5-heading8" style="color:#000000;">Comments</h4>
+    <div id="page5-markdown4" class="show-list-numbers-and-dots">
+      <p style="color:#000000;">{{comment}}
+      </p>
+    </div>
+    <h4 id="page5-heading9" style="color:#000000;">Personal data</h4>
+    <div id="page5-markdown5" class="show-list-numbers-and-dots">
+      <p style="color:#000000;">Name: {{name}} <br />Email: {{email}} <br />Phone: {{phone}}
+      </p>
+    </div>
+  </ion-content>
+</ion-view>

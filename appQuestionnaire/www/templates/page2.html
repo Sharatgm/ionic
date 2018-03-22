@@ -1,0 +1,13 @@
+<ion-view title="Page" id="page2">
+  <ion-content padding="true" class="has-header">
+    <a ui-sref="page()" id="page2-button3" class="button button-positive button-clear icon ion-android-arrow-dropleft"> Back</a>
+    <h2 id="page2-heading2" style="color:#000000;text-align:center;">The meal I ordered included:</h2>
+    <form id="page2-form2" class="list">
+      <ion-checkbox id="page2-checkbox1" ng-model="mdl.check1">Starter</ion-checkbox>
+      <ion-checkbox id="page2-checkbox2" ng-model="mdl.check2">First course</ion-checkbox>
+      <ion-checkbox id="page2-checkbox3" ng-model="mdl.check3">Main dish</ion-checkbox>
+      <ion-checkbox id="page2-checkbox4" ng-model="mdl.check4">Dessert</ion-checkbox>
+    </form>
+    <a ui-sref="page3({radio: radio, check1 : mdl.check1, check2: mdl.check2, check3: mdl.check3, check4: mdl.check4})" id="page2-button4" class="button button-positive button-block button-outline">Next</a>
+  </ion-content>
+</ion-view>

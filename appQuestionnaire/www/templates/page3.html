@@ -1,0 +1,11 @@
+<ion-view title="Page" id="page3">
+  <ion-content padding="true" class="has-header">
+    <a ui-sref="page2()" id="page3-button5" class="button button-positive button-clear icon ion-android-arrow-dropleft"> Back</a>
+    <h2 id="page3-heading3" style="color:#000000;text-align:center;">Add your comments: </h2>
+    <form id="page3-form3" class="list">
+      <label class="item item-input" id="page3-textarea1">
+        <span class="input-label">Comment</span><textarea ng-model="mdl.comment" placeholder=""></textarea></label>
+    </form>
+    <a ui-sref="page4({radio: radio, check1: check1, check2: check2, check3: check3, check4: check4, comment: mdl.comment})" id="page3-button6" class="button button-positive button-block button-outline">Next</a>
+  </ion-content>
+</ion-view>

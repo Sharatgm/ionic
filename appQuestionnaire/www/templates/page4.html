@@ -1,0 +1,21 @@
+<ion-view title="Page" id="page4">
+  <ion-content padding="true" class="has-header">
+    <a ui-sref="page3()" id="page4-button7" class="button button-positive button-clear icon ion-android-arrow-dropleft"> Back</a>
+    <h2 id="page4-heading4" style="color:#000000;text-align:center;">Let us know your name, email and phone number</h2>
+    <form id="page4-form4" class="list">
+      <label class="item item-input" id="page4-input1">
+        <span class="input-label" >Name</span>
+        <input type="text" ng-model="mdl.name" placeholder="Juanita Pérez">
+      </label>
+      <label class="item item-input" id="page4-input2">
+        <span class="input-label" >Email</span>
+        <input type="email" ng-model="mdl.email" placeholder="juanita@perez.com">
+      </label>
+      <label class="item item-input" id="page4-input3">
+        <span class="input-label" >Phone number</span>
+        <input type="tel" ng-model="mdl.phone" placeholder="442 5654321">
+      </label>
+      <a ui-sref="page5({radio: radio, check1: check1, check2: check2, check3: check3, check4: check4, comment: comment, name: mdl.name, email: mdl.email, phone: mdl.phone})" id="page4-button8" class="button button-positive button-block">Submit</a>
+    </form>
+  </ion-content>
+</ion-view>

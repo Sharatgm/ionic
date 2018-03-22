@@ -1,0 +1,14 @@
+<ion-view title="Page" id="page1">
+  <ion-content padding="true" class="has-header">
+    <h2 id="page-heading1" style="color:#000000;text-align:center;">The meal I ordered was:</h2>
+    <form id="page-form1" class="list">
+      <ion-radio id="page-radio1" value="Excellent" ng-model="mdl.radio">Excellent</ion-radio>
+      <ion-radio id="page-radio4" value="Good" ng-model="mdl.radio">Good</ion-radio>
+      <ion-radio id="page-radio5" value="Regular" ng-model="mdl.radio">Regular</ion-radio>
+      <ion-radio id="page-radio2" value="Bad" ng-model="mdl.radio">Bad</ion-radio>
+      <ion-radio id="page-radio3" value="Awful" ng-model="mdl.radio">Awful</ion-radio>
+
+    </form>
+    <a ui-sref="page2({radio: mdl.radio})" id="page-button1" class="button button-positive button-block button-outline">Next</a>
+  </ion-content>
+</ion-view>
