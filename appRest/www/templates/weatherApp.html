@@ -1,0 +1,13 @@
+<ion-view title="Weather App" id="page1">
+  <ion-content padding="true" class="has-header">
+    <div class="spacer" style="width: 300px; height: 20px;"></div>
+    <form id="weatherApp-form1" class="list">
+      <h3 id="weatherApp-heading1" style="color:#000000;">Write your city</h3>
+      <label class="item item-input" id="weatherApp-input1">
+        <span class="input-label">City</span>
+        <input type="text" placeholder="Querétaro" ng-model="mdl.city">
+      </label>
+    </form>
+    <a ui-sref="weatherApp2({ city: mdl.city })" id="weatherApp-button1" class="button button-energized button-block">Get weather report</a>
+  </ion-content>
+</ion-view>
