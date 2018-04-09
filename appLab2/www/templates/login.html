@@ -1,0 +1,16 @@
+<ion-view title="Login" id="page1">
+  <ion-content padding="true" class="has-header">
+    <form id="login-form1" class="list">
+      <label class="item item-input" id="login-input1">
+        <span class="input-label">Name</span>
+        <input type="text" ng-model="mdl.name" placeholder="">
+      </label>
+      <label class="item item-input" id="login-input2">
+        <span class="input-label">Lastname</span>
+        <input type="text" ng-model="mdl.lastname" placeholder="">
+      </label>
+    </form>
+    <a ui-sref="welcome({ name: mdl.name, lastname:
+mdl.lastname })" id="login-button1" class="button button-positive button-block">Login</a>
+  </ion-content>
+</ion-view>
